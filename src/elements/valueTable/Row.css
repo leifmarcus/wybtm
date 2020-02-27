@@ -1,0 +1,37 @@
+
+.Row {
+    border-top: 1px solid #ccc;
+    padding-top:2rem;
+    margin-top: 2rem;
+}
+@media screen and (max-width: 767px) {
+
+    .Row__column {
+        flex: 0 0 33.333%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .Row {
+        display: flex;
+    }
+    .Row__column {
+    }
+
+    .Row__label {
+        flex: 1 1 20%;
+        font-weight: 600;
+        align-self: stretch;
+        align-content: center;
+    }
+
+    .Row__value {
+        padding-left: 2rem;
+        flex: 1 1 40%;
+    }
+
+    .Row__description {
+        padding-left: 2rem;
+        flex: 1 1 40%;
+    }
+}

@@ -1,0 +1,23 @@
+export type GeoIPLookupResponse = null | Partial<{
+    query: string;
+    status: 'success' | 'fail';
+    continent: string;
+    country: string;
+    countryCode: string;
+    region: string;
+    regionName: string;
+    city: string;
+    zip: string;
+    lat: number;
+    lon: number;
+    timezone: string;
+    currency: string;
+    isp: string;
+    org: string;
+    as: string;
+    asname: string;
+    reverse: string;
+    mobile: boolean;
+    proxy: boolean;
+    hosting: boolean;
+}>;
